@@ -1,0 +1,110 @@
+#### National Data:
+
+- National Center for Education Statistics (NCES)
+    - [Common Core Data: 2017 - 2018 Local Education Agency (School District) Finance Survey (F-33)](https://nces.ed.gov/ccd/files.asp#Fiscal:1,LevelId:5,Page:1)
+    - [Public High School Graduation Rates](https://nces.ed.gov/programs/coe/pdf/coe_coi.pdf)
+
+#### State Data:
+
+- Alabama State Department of Education
+    - [Education Report Card: Supporting Data 2017-2018](https://www.alsde.edu/dept/erc/Pages/ercotherdata-all.aspx?navtext=Supporting%20Data)
+- Alaska Department of Education & Early Development
+    - [Data Center: Four Year Graduation Rate By District 2018](https://education.alaska.gov/data-center)
+- Arizona Department of Education
+    - [Accountability & Research Data: Cohort 2018 Four Year Graduation Rate Data](https://www.azed.gov/accountability-research/data)
+- Arkansas Division of Elementary & Secondary Education
+    - [2018 Graduation Rate](https://adesandbox.arkansas.gov/project?v=fMTc0ZjVhNzJiMDY0MDkzMGJjOWQzN2ZmNGRkYzkzMTI)
+- California Department of Education
+    - [Adjusted Cohort Graduation Rate and Outcome Data 2017-18](https://www.cde.ca.gov/ds/sd/sd/filesacgr.asp)
+- Colorado Department of Education
+    - [2018 Graduation Statistics](http://www.cde.state.co.us/cdereval/2017graduationstatistics-0)
+- Connecticut EdSight Report Cards
+    - [Next Generation Accountability, 2017-18](http://edsight.ct.gov/SASStoredProcess/guest?_year=2017-18&_district=State+of+Connecticut&_school=&_program=%2FCTDOE%2FEdSight%2FRelease%2FReporting%2FPublic%2FReports%2FStoredProcesses%2FNGAReport&_select=Submit)
+- Delaware Department of Education
+    - [High School Graduation Rates 2017-2018](https://www.doe.k12.de.us/Page/1523)
+- DC: Office of the State Superintendent of Education
+    - [2017-18 Adjusted Cohort Graduation Rate](https://osse.dc.gov/publication/2017-18-adjusted-cohort-graduation-rate)
+- Florida Department of Education
+    - [High School Graduation Rates](http://www.fldoe.org/accountability/data-sys/edu-info-accountability-services/pk-12-public-school-data-pubs-reports/students.stml)
+- Georgia: The Governor's Office of Student Achievement
+    - [Graduation Rate (4-Year Cohort) 2017-18](https://gosa.georgia.gov/report-card-dashboards-data/downloadable-data)
+- Hawaii State Department of Education
+    - [Strive HI: 2017-18 Results](https://www.hawaiipublicschools.org/VisionForSuccess/AdvancingEducation/StriveHIPerformanceSystem/Pages/home.aspx)
+- Idaho State Department of Education
+    - [Assessment & Graduation Rate Results: 2015-2019 Four Year Graduation Master](https://www.sde.idaho.gov/assessment/accountability/results.html)
+- Illinois State Board of Education
+    - [Annual Statistical Report](https://www.google.com/url?q=https://www.isbe.net/Pages/Annual-Statistical-Report.aspx&sa=D&source=editors&ust=1612998596163000&usg=AFQjCNF_Oh9Fexk4lsUWQDNB0kiF5nrfLA)
+- Indiana Department of Education
+    - [2018 State Graduation Rate Data](https://www.doe.in.gov/accountability/find-school-and-corporation-data-reports)
+- Iowa Department of Education
+    - [Graduation Rates by District, by Subgroup: 2018](https://educateiowa.gov/graduation-rates-and-dropout-rates)
+- Kansas State Department of Education
+    - [Kansas K-12 Report Generator](https://datacentral.ksde.org/report_gen.aspx)
+- Kentucky Department of Education
+    - [School Report Card Data Sets: 2016-2017](https://applications.education.ky.gov/SRC/DataSets.aspx)
+- Louisiana Believes: Department of Education
+    - [2018 State School System and School Cohort Grad Rates by Subgroups](https://www.louisianabelieves.com/resources/library/high-school-performance)
+- Maine Department of Education
+    - [Graduation Data Set 2017/2018](https://www.maine.gov/doe/data-reporting/reporting/warehouse/graduation-dropout-data)
+- Maryland State Department of Education
+    - [Adjusted Cohort Graduation and Dropout Rate Data](https://reportcard.msde.maryland.gov/Graphs/#/DataDownloads/datadownload/3/17/6/99/XXXX/2019)
+- Massachusetts Department of Elementary and Secondary Education
+    - [2018 Graduation Rate Report (District) for All Students 4-Year Graduation Rate](https://profiles.doe.mass.edu/statereport/gradrates.aspx)
+- MI School Data: Michigan's Official Education Data Source
+    - [2018 Cohort Four-Year [...] Graduation and Dropout Rates including Subgroups](https://mischooldata.org/historical-graddropout)
+- Minnesota Department of Education
+    - [Data Reports and Analytics](https://mischooldata.org/historical-graddropout)
+- Mississippi Department of Education
+    - [4-Year Graduation Rates: 2020 District Graduation and Dropout Rates Summary](https://www.mdek12.org/sites/default/files/Offices/MDE/OEA/OPR/2020/grad_dropout_rates_2020_report.pdf)
+- Missouri Department of Elementary and Secondary Education
+    - [1S1 Secondary Four-Year Graduation Rate - Public](https://apps.dese.mo.gov/MCDS/home.aspx)
+- Growth and Enhancement of Montana Students (GEMS)
+    - [Student Achievement & Performance: Graduation](https://gems.opi.mt.gov/student-data) (Official Dashboard Missing)
+- Nebraska Department of Education
+    - [Data Downloads: Cohort Graduation Data](https://nep.education.ne.gov/Links)
+- Nevada Department of Education
+    - [Data Interaction for Nevada Accountability Portal](http://nevadareportcard.nv.gov/di/main/demoprof)
+- New Hampshire Department of Education
+    - [Cohort Graduation and Dropout Rate 2017-2018](https://www.education.nh.gov/who-we-are/division-of-educator-and-analytic-resources/bureau-of-education-statistics/dropouts-and-completers)
+- Official Site of the State of New Jersey Department of Education
+    - [2018 Adjusted Cohort 4-Year Graduation Rates](https://www.nj.gov/education/schoolperformance/grad/ACGR.shtml)
+- New Mexico Public Education Department
+    - [Graduation Data: Cohort of 2018 4-Year Graduation Rates](https://webnew.ped.state.nm.us/bureaus/accountability/graduation/)
+- New York State Education Department
+    - [2017-18 Graduation Rate Database](https://data.nysed.gov/downloads.php)
+- North Carolina Department of Public Instruction
+    - [Cohort Graduation Rates: 2015–16 Entering 9th Graders Graduating in 2018–19 or Earlier](https://www.dpi.nc.gov/districts-schools/testing-and-school-accountability/school-accountability-and-reporting/cohort-graduation-rates)
+- Insights.nd.gov: Official Portal for North Dakota State Government
+    - [Education Data: District Level Grad Rate Data](https://insights.nd.gov/Data)
+- Ohio Department of Education
+    - [Education Report Card](https://reportcard.education.ohio.gov/)
+- Oklahoma State Department of Education
+    - [Oklahoma Public High School Graduation Rates: 2017 State, District, and Site Grad Rates]
+- Oregon Department of Education
+    - [Cohort Graduation Rate: School Year 2017-18](https://www.oregon.gov/ode/reports-and-data/students/Pages/Cohort-Graduation-Rate.aspx)
+- Pennsylvania Department of Education
+    - [Data and Reporting: 2017-2018 Pennsylvania 4-Year Cohort Graduation Rates](https://www.education.pa.gov/DataAndReporting/CohortGradRate/Pages/default.aspx)
+- Rhode Island Department of Elementary and Secondary Education
+    - [Information Services: Graduation Rates for the 2017-18 Graduating Class](https://www.eride.ri.gov/reports/default.asp)
+- South Carolina School Report Card
+    - [Overall Graduation Rate For 2017-2018](https://www.screportcards.com/files/2018//data-files/)
+- South Dakota Department of Education
+    - [South Dakota Report Card: Graduation Rate 2017-18](https://doe.sd.gov/reportcard/)
+- Tennessee Department of Education
+    - [Data Downloads and Requests: 2018 Report Card Data](https://www.tn.gov/education/data/data-downloads.html)
+- Texas Education Agency
+    - [Four-Year Graduation and Dropout Data, Class of 2018](https://tea.texas.gov/reports-and-data/school-performance/accountability-research/completion-graduation-and-dropout/four-year-graduation-and-dropout-data-class-of-2018)
+- Utah State Board of Education
+    - [Utah 2018 Graduation Rates](https://www.schools.utah.gov/file/19b4c77f-7f84-49c2-8afa-086d6c9dabb2)
+- State of Vermont Agency of Education
+    - [Vermont Education Dashboard: Full Dataset](https://education.vermont.gov/data-and-reporting/vermont-education-dashboard)
+- Virginia Department of Education
+    - [Class of 2020 Four-Year Reports: School Divisions](https://www.doe.virginia.gov/statistics_reports/graduation_completion/cohort_reports/index.shtml)
+- Data.WA.gov | State of Washington Open Data Platform
+    - [Report Card Graduation 2017-18](https://data.wa.gov/Education/Report-Card-Graduation-2017-18/384s-ygbu)
+- West Virginia Department of Education
+    - [Four Year Graduation Rate by County & Subgroup for 2017-2018](https://zoomwv.k12.wv.us/Dashboard/dashboard/2111)
+- Wisconsin Department of Public Instruction
+    - [WISEdash: hs_completion_certified_2017-18](https://dpi.wi.gov/wisedash/download-files/type?field_wisedash_upload_type_value=hs-completion)
+- Wyoming Department of Education
+    - [WDE Report Viewer: Federal Graduation Rates for the 2017-18 Cohort](https://portals.edu.wyoming.gov/Reports/(S(kbo4yg0m2ci3u1fetj3xa2qh\)\)/Public/wde-reports-2012/public-reports/gradrates/fedfouryearadjusteddistrict)

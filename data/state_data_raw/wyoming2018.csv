@@ -1,0 +1,103 @@
+<<<<<<< HEAD
+﻿DistrictId,DistrictName,ReportingCategory,GradRateType,SchoolYear,total_exiters,graduates,graduation_rate
+0101000,Albany #1,All Students,4 Year,2017-18,284,234,82.4%
+0201000,Big Horn #1,All Students,4 Year,2017-18,156,78,50.0%
+0202000,Big Horn #2,All Students,4 Year,2017-18,57,54,94.7%
+0203000,Big Horn #3,All Students,4 Year,2017-18,44,40,90.9%
+0204000,Big Horn #4,All Students,4 Year,2017-18,23,21,91.3%
+0301000,Campbell #1,All Students,4 Year,2017-18,624,518,83.0%
+0401000,Carbon #1,All Students,4 Year,2017-18,145,116,80.0%
+0402000,Carbon #2,All Students,4 Year,2017-18,53,46,86.8%
+0501000,Converse #1,All Students,4 Year,2017-18,135,115,85.2%
+0502000,Converse #2,All Students,4 Year,2017-18,44,36,81.8%
+0601000,Crook #1,All Students,4 Year,2017-18,90,78,86.7%
+0701000,Fremont #1,All Students,4 Year,2017-18,122,104,85.3%
+0702000,Fremont #2,All Students,4 Year,2017-18,16,16,100.0%
+0706000,Fremont #6,All Students,4 Year,2017-18,30,30,100.0%
+0714000,Fremont #14,All Students,4 Year,2017-18,38,22,57.9%
+0721000,Fremont #21,All Students,4 Year,2017-18,25,10,40.0%
+0724000,Fremont #24,All Students,4 Year,2017-18,28,24,85.7%
+0725000,Fremont #25,All Students,4 Year,2017-18,192,147,76.6%
+0738000,Fremont #38,All Students,4 Year,2017-18,19,0,0.0%
+0801000,Goshen #1,All Students,4 Year,2017-18,143,124,86.7%
+0901000,Hot Springs #1,All Students,4 Year,2017-18,56,45,80.4%
+1001000,Johnson #1,All Students,4 Year,2017-18,90,79,87.8%
+1101000,Laramie #1,All Students,4 Year,2017-18,1029,821,79.8%
+1102000,Laramie #2,All Students,4 Year,2017-18,58,48,82.8%
+1201000,Lincoln #1,All Students,4 Year,2017-18,40,39,97.5%
+1202000,Lincoln #2,All Students,4 Year,2017-18,209,183,87.6%
+1301000,Natrona #1,All Students,4 Year,2017-18,940,733,78.0%
+1401000,Niobrara #1,All Students,4 Year,2017-18,103,59,57.3%
+1501000,Park #1,All Students,4 Year,2017-18,126,114,90.5%
+1506000,Park #6,All Students,4 Year,2017-18,158,142,89.9%
+1516000,Park #16,All Students,4 Year,2017-18,9,9,100.0%
+1601000,Platte #1,All Students,4 Year,2017-18,68,62,91.2%
+1602000,Platte #2,All Students,4 Year,2017-18,15,14,93.3%
+1701000,Sheridan #1,All Students,4 Year,2017-18,60,51,85.0%
+1702000,Sheridan #2,All Students,4 Year,2017-18,277,247,89.2%
+1703000,Sheridan #3,All Students,4 Year,2017-18,8,8,100.0%
+1801000,Sublette #1,All Students,4 Year,2017-18,71,69,97.2%
+1809000,Sublette #9,All Students,4 Year,2017-18,48,43,89.6%
+1901000,Sweetwater #1,All Students,4 Year,2017-18,391,290,74.2%
+1902000,Sweetwater #2,All Students,4 Year,2017-18,209,193,92.3%
+2001000,Teton #1,All Students,4 Year,2017-18,188,165,87.8%
+2101000,Uinta #1,All Students,4 Year,2017-18,210,176,83.8%
+2104000,Uinta #4,All Students,4 Year,2017-18,59,55,93.2%
+2106000,Uinta #6,All Students,4 Year,2017-18,51,40,78.4%
+2201000,Washakie #1,All Students,4 Year,2017-18,89,77,86.5%
+2202000,Washakie #2,All Students,4 Year,2017-18,8,5,62.5%
+2301000,Weston #1,All Students,4 Year,2017-18,41,36,87.8%
+2307000,Weston #7,All Students,4 Year,2017-18,22,21,95.5%
+
+=======
+﻿DistrictId,DistrictName,ReportingCategory,GradRateType,SchoolYear,total_exiters,graduates,graduation_rate
+0101000,Albany #1,All Students,4 Year,2017-18,284,234,82.4%
+0201000,Big Horn #1,All Students,4 Year,2017-18,156,78,50.0%
+0202000,Big Horn #2,All Students,4 Year,2017-18,57,54,94.7%
+0203000,Big Horn #3,All Students,4 Year,2017-18,44,40,90.9%
+0204000,Big Horn #4,All Students,4 Year,2017-18,23,21,91.3%
+0301000,Campbell #1,All Students,4 Year,2017-18,624,518,83.0%
+0401000,Carbon #1,All Students,4 Year,2017-18,145,116,80.0%
+0402000,Carbon #2,All Students,4 Year,2017-18,53,46,86.8%
+0501000,Converse #1,All Students,4 Year,2017-18,135,115,85.2%
+0502000,Converse #2,All Students,4 Year,2017-18,44,36,81.8%
+0601000,Crook #1,All Students,4 Year,2017-18,90,78,86.7%
+0701000,Fremont #1,All Students,4 Year,2017-18,122,104,85.3%
+0702000,Fremont #2,All Students,4 Year,2017-18,16,16,100.0%
+0706000,Fremont #6,All Students,4 Year,2017-18,30,30,100.0%
+0714000,Fremont #14,All Students,4 Year,2017-18,38,22,57.9%
+0721000,Fremont #21,All Students,4 Year,2017-18,25,10,40.0%
+0724000,Fremont #24,All Students,4 Year,2017-18,28,24,85.7%
+0725000,Fremont #25,All Students,4 Year,2017-18,192,147,76.6%
+0738000,Fremont #38,All Students,4 Year,2017-18,19,0,0.0%
+0801000,Goshen #1,All Students,4 Year,2017-18,143,124,86.7%
+0901000,Hot Springs #1,All Students,4 Year,2017-18,56,45,80.4%
+1001000,Johnson #1,All Students,4 Year,2017-18,90,79,87.8%
+1101000,Laramie #1,All Students,4 Year,2017-18,1029,821,79.8%
+1102000,Laramie #2,All Students,4 Year,2017-18,58,48,82.8%
+1201000,Lincoln #1,All Students,4 Year,2017-18,40,39,97.5%
+1202000,Lincoln #2,All Students,4 Year,2017-18,209,183,87.6%
+1301000,Natrona #1,All Students,4 Year,2017-18,940,733,78.0%
+1401000,Niobrara #1,All Students,4 Year,2017-18,103,59,57.3%
+1501000,Park #1,All Students,4 Year,2017-18,126,114,90.5%
+1506000,Park #6,All Students,4 Year,2017-18,158,142,89.9%
+1516000,Park #16,All Students,4 Year,2017-18,9,9,100.0%
+1601000,Platte #1,All Students,4 Year,2017-18,68,62,91.2%
+1602000,Platte #2,All Students,4 Year,2017-18,15,14,93.3%
+1701000,Sheridan #1,All Students,4 Year,2017-18,60,51,85.0%
+1702000,Sheridan #2,All Students,4 Year,2017-18,277,247,89.2%
+1703000,Sheridan #3,All Students,4 Year,2017-18,8,8,100.0%
+1801000,Sublette #1,All Students,4 Year,2017-18,71,69,97.2%
+1809000,Sublette #9,All Students,4 Year,2017-18,48,43,89.6%
+1901000,Sweetwater #1,All Students,4 Year,2017-18,391,290,74.2%
+1902000,Sweetwater #2,All Students,4 Year,2017-18,209,193,92.3%
+2001000,Teton #1,All Students,4 Year,2017-18,188,165,87.8%
+2101000,Uinta #1,All Students,4 Year,2017-18,210,176,83.8%
+2104000,Uinta #4,All Students,4 Year,2017-18,59,55,93.2%
+2106000,Uinta #6,All Students,4 Year,2017-18,51,40,78.4%
+2201000,Washakie #1,All Students,4 Year,2017-18,89,77,86.5%
+2202000,Washakie #2,All Students,4 Year,2017-18,8,5,62.5%
+2301000,Weston #1,All Students,4 Year,2017-18,41,36,87.8%
+2307000,Weston #7,All Students,4 Year,2017-18,22,21,95.5%
+
+>>>>>>> 32ca6ce1797900c6f6da5a386d226ead80fb0f37
