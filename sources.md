@@ -89,7 +89,7 @@
 - Ohio Department of Education
     - [Education Report Card](https://reportcard.education.ohio.gov/)
 - Oklahoma State Department of Education
-    - [Oklahoma Public High School Graduation Rates: 2017 State, District, and Site Grad Rates]
+    - [Oklahoma Public High School Graduation Rates: 2017 State, District, and Site Grad Rates](https://sde.ok.gov/documents/2015-09-25/oklahoma-public-school-graduation-rates)
 - Oregon Department of Education
     - [Cohort Graduation Rate: School Year 2017-18](https://www.oregon.gov/ode/reports-and-data/students/Pages/Cohort-Graduation-Rate.aspx)
 - Pennsylvania Department of Education
@@ -117,6 +117,6 @@
 - Wisconsin Department of Public Instruction
     - [WISEdash: hs_completion_certified_2017-18](https://dpi.wi.gov/wisedash/download-files/type?field_wisedash_upload_type_value=hs-completion)
 - Wyoming Department of Education
-    - [WDE Report Viewer: Federal Graduation Rates for the 2017-18 Cohort](https://portals.edu.wyoming.gov/Reports/(S(kbo4yg0m2ci3u1fetj3xa2qh\)\)/Public/wde-reports-2012/public-reports/gradrates/fedfouryearadjusteddistrict)
+    - [WDE Report Viewer: Federal Graduation Rates for the 2017-18 Cohort](https://portals.edu.wyoming.gov/Reports/(S(kbo4yg0m2ci3u1fetj3xa2qh))/Public/wde-reports-2012/public-reports/gradrates/fedfouryearadjusteddistrict)
     
     
