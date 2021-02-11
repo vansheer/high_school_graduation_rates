@@ -9,7 +9,7 @@ February 11, 2021
 
 #### Problem Statement
 
-The purpose of this work was to determine what features are most impactful in predicting high school graduation rates. Primary audience of the project is state and local governments, as well as, federal government, education non-profit organizations. 
+The purpose of this work was to determine what features are most impactful in predicting high school graduation rates. Primary audience of the project is state and local governments, as well as, federal government, and education non-profit organizations. 
 
 #### Executive Summary
 
