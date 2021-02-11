@@ -9,7 +9,7 @@ February 11, 2021
 
 #### Problem Statement
 
----
+The purpose of this work was to determine what features are most impactful in predicting high school graduation rates. Primary audience of the project is state and local governments, as well as, federal government, education non-profit organizations. 
 
 #### Executive Summary
 
@@ -23,17 +23,19 @@ School districts’ fall memberships (the number of students enrolled at the beg
 
 Representing finances as per student moved to somewhat normalize the distributions, but they tended to still be right-skewed, so features were then set to be the log (base 10) of the per student calculations. Features with values of zero or below were determined to represent incomplete data for the district, and were set to be the simple mean of their column values to prevent errors when finding the log. Log-scaling values allowed the modeling process to better examine the full range of values, essentially stretching out the bottom end of the distribution and shortening the top. This both dampens the effect of outliers and magnifies variance within the most heavily-clustered sections of the distributions. 
 
-**[Modeling?]**
+**Feature Selection**
 
-We built a simple web app with Streamlit for users who would like to access graduation information in a visualized way. The app lets users select a state and a school district, then display the map of that district based on the geographic coordinates pulled with Geopy. A marker is placed on the map to identify the school district. Users can move their mice over the mark to see the name of the school district and its real-world graduation rate. 
+In our dataset, we were dealing with 133 different variables and the way we wanted to structure the  process is to break the features down into categories to better understand how each variable is correlated and how variables are correlated to the target (please see data dictionary for more details). The data was primarily fiscal and included a good amount of financial indicators per school district. For example, breakdown of State and Local revenue streams, detailed look at expenditures, spendings on salaries to instructional and business teams, as well as, details on school district assets and debt. 
 
-Five numeric features that are on top of the list of importance are displayed below the map, where each one is in the form of a slider so the values of these features can be altered. A real-time prediction will be performed in the backend upon each value change, and users can see how different input might change the final result. 
-
-The result, of course, is affected by many more features than the five listed. We only include these five numeric ones so that users can play around and get a sense of where they can possibly focus on. There are also many categorical features one needs to consider, such as whether it's a charter school district or not. To further improve the readability, a bar plot of the real-world rate and the predicted rate can be included.
-
-
+We’ve also done background research on 2018 spending per student split by state. On average, schools spent $12,612 per pupil, annually. At the top of the range is State of New York with $24,040 annual spendings, followed by Connecticut and New Jersey with around $20,000 each. Utah is at the other end of the range with $7,628 annual spendings. The federal government provides ~8% of funding for public education; state and local governments provide ~47% and ~46% of public education funds, respectively. The funding amount is correlated to local property taxes leading to a disbalance between wealthy and impoverished school districts and even different schools within a single school district. 
+  
+We’ve noticed multicollinearity between the variables early on in the process. Decided that we will avoid linear models as multicollinearity normally weakens statistical power of linear regressors. For our final modeling purposes, we dummified categorical features and used 33 predictors (please see data dictionary for more details). 
 
 **Model Comparison**
+
+Please see a comparison of the six different regressors that we employed in this work along with the baseline model (for details, please see models folder). Our top performing model was Random Forest Regressor with r2-score 0.72, implying that the model explains 72% of the variance of the data it hasn’t yet seen and RMSE 0.07. That compares to the Null Model r2-score 0 and RMSE 0.13. For the baseline model, we used the mean value of the y-variable as our predictions. 
+ 
+We tested linear regression - as anticipated, the model's performance was affected by high correlation between features.
 
 | Model | R2-score | RMSE |
 | ------|----------|------|
@@ -45,10 +47,75 @@ The result, of course, is affected by many more features than the five listed. W
 | Neural Network | 0.31 | 0.10 |
 | AdaBoost Regressor | 0.12 | 0.11 |
 
+**RFE**
 
-#### Key Findings
+In order to get details on what features were most impactful, we employed several methods. One of the algorithms that we used was Recursive Feature Elimination (RFE) (for details, please see notebook_1_random_forest.ipynb in the models folder). Here is the list of all features that RFE ranked as most important:
 
----
+- Teacher Salaries - support services - pupils
+- Salaries - Instruction
+- No associated schools are charter
+- Total Federal Revenue
+- Local Revenue - District Activity 
+- Total Expenditures
+- Other Funds
+- Textbooks
+- Teacher Salaries - special education
+- Teacher Salaries - other education
+- Teacher Salaries - regular programs
+- Teacher Salaries - support services - instructional staff
+- Salaries - School Admin
+- Salaries - business/ other
+- Employee Benefits - instruction
+- Employee benefits - support services - pupils
+- Total State Revenue
+
+**Principal Component Analysis**
+
+Another tool that we employed to assess feature importance was Principal Component Analysis (PCA). This is a large dataset and we wanted to reduce dimensionality, to be able to analyze the results of the model, while preserving as much information as possible. Principal components are constructed as a combination of the initial features, so that most of the information within the initial features is compressed into the first components and represent maximum variance. Looking at the first ten principal components, we discovered that these variables carried most weight (for details, please see notebook_1_random_forest.ipynb in the models folder):
+
+- Some but not all associated schools are charter
+- No associated schools are charter
+- Total Federal Revenue
+- Total State Revenue
+- Local Revenue - District Activity 
+- Local Revenue - Textbook Sales
+- Local Revenue - Fines and Forfeits
+- Local Revenue - Individual and Corporate Income Taxes
+- Teacher Salaries - Vocational Ed programs
+- Teacher Salaries - support services - instructional staff
+- Salaries - School Admin
+- Salaries - business/ other
+- Employee benefits - support services - instructional staff
+- Employee benefits - support services - school admin
+- Sinking Fund
+- Other Funds
+- Long term debt outstanding at beg of year
+- Long terms debt - issued during fiscal year
+- Long term debt outstanding at end of year
+- Short term debt outstanding at beg of year
+
+**App Predicting Graduation Rate**
+
+We built a simple web app with Streamlit for users who would like to access graduation information in a visualized way. The app lets users select a state and a school district, then display the map of that district based on the geographic coordinates pulled with Geopy. A marker is placed on the map to identify the school district. Users can move their mice over the mark to see the name of the school district and its real-world graduation rate. 
+
+Five numeric features that are on top of the list of importance are displayed below the map, where each one is in the form of a slider so the values of these features can be altered. A real-time prediction will be performed in the backend upon each value change, and users can see how different input might change the final result. 
+
+The result, of course, is affected by many more features than the five listed. We only include these five numeric ones so that users can play around and get a sense of where they can possibly focus on. There are also many categorical features one needs to consider, such as whether it's a charter school district or not. To further improve the readability, a bar plot of the real-world rate and the predicted rate can be included.
+
+#### Key Findings and Recommendations
+
+Based on the model and our work on feature analysis, we recommend focusing and investing in the features listed below in an attempt to improve graduation rates. The features consistently proven to be strong predictors of the output using both Recursive Feature Elimination and Principal Component Analysis methods. 
+
+- Total Federal Revenue
+- Total State Revenue
+- Local Revenue - District Activity 
+- Teacher Salaries - support services - instructional staff
+- Salaries - School Admin
+- Salaries - business/ other
+- Employee benefits - support services - school admin
+- School Funds
+
+For future research, we would incorporate non-fiscal variables in our work to make the analysis more comprehensive. We would particularly be interested in looking at student participation and attendance, student academic performance and achievements, teacher labor union data.
 
 #### File Directory
 
@@ -95,9 +162,9 @@ The result, of course, is affected by many more features than the five listed. W
 
 
 - models/
-    - notebook_1_random_forest.ipynb
-    - notebook_2_svr.ipynb
-    - notebook_3_gradientboosting.ipynb
+    - notebook_1_random_forest.ipynb: variable heatmap, null model, random forest regression, RFE, PCA results
+    - notebook_2_svr.ipynb: support vector regression results
+    - notebook_3_gradientboosting.ipynb: gradient boostin
     - notebook_4_bagging.ipynb
     - notebook_5_adaboost.ipynb
     - notebook_6_neural_network.ipynb
