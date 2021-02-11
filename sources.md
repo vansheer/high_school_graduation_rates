@@ -1,8 +1,18 @@
-#### National Data:
+#### National Data & Research:
 
 - National Center for Education Statistics (NCES)
     - [Common Core Data: 2017 - 2018 Local Education Agency (School District) Finance Survey (F-33)](https://nces.ed.gov/ccd/files.asp#Fiscal:1,LevelId:5,Page:1)
     - [Public High School Graduation Rates](https://nces.ed.gov/programs/coe/pdf/coe_coi.pdf)
+- United States Census Bureau
+    - [Annual Spending per Student](https://data.census.gov/cedsci/table?q=spending%20per%20student&tid=GOVSTIMESERIES.GS00SS08&hidePreview=false)
+- ASCD
+    - [Unequal School Funding in the United States](http://www.ascd.org/publications/educational-leadership/may02/vol59/num08/Unequal-School-Funding-in-the-United-States.aspx)
+- EDUCATIONDATA.ORG
+    - [US Public Education Spending Statistics](https://educationdata.org/public-education-spending-statistics)
+- Public School Review
+    - [Who Oversees Public Schools](https://www.publicschoolreview.com/blog/who-oversees-public-schools)
+- Ed100
+    - [Districts Control How Money Gets to the Classroom](https://ed100.org/lessons/schoolfunding)
 
 #### State Data:
 
@@ -108,10 +118,5 @@
     - [WISEdash: hs_completion_certified_2017-18](https://dpi.wi.gov/wisedash/download-files/type?field_wisedash_upload_type_value=hs-completion)
 - Wyoming Department of Education
     - [WDE Report Viewer: Federal Graduation Rates for the 2017-18 Cohort](https://portals.edu.wyoming.gov/Reports/(S(kbo4yg0m2ci3u1fetj3xa2qh\)\)/Public/wde-reports-2012/public-reports/gradrates/fedfouryearadjusteddistrict)
-    - [Annual Spending per Student](https://data.census.gov/cedsci/table?q=spending%20per%20student&tid=GOVSTIMESERIES.GS00SS08&hidePreview=false)
-    - [Unequal School Funding in the United States](http://www.ascd.org/publications/educational-leadership/may02/vol59/num08/Unequal-School-Funding-in-the-United-States.aspx)
-    - [US Public Education Spending Statistics](https://educationdata.org/public-education-spending-statistics#california)
-    - [Who Oversees Public Schools](https://www.publicschoolreview.com/blog/who-oversees-public-schools)
-    - [Districts Control How Money Gets to the Classroom](https://ed100.org/lessons/schoolfunding)
     
     
