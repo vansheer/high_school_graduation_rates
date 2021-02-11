@@ -13,7 +13,20 @@ February 11, 2021
 
 #### Executive Summary
 
----
+
+
+**Model Comparison**
+
+| Model | R2-score | RMSE |
+| ------|----------|------|
+| Null Model | 0.00 | 0.13 |
+| Random Forest Regressor | 0.72 | 0.07 |
+| Bootstrap Aggregation | 0.67 | 0.07 |
+| Gradient Boosting | 0.47 | 0.09 |
+| SVR | 0.35 | 0.10 |
+| Neural Network | 0.31 | 0.10 |
+| AdaBoost Regressor | 0.12 | 0.11 |
+
 
 #### Key Findings
 
@@ -64,6 +77,10 @@ February 11, 2021
     - eda_transformed.ipynb
     - presentation_visuals.ipynb
 
+- models
+    - notebook_1_random_forest.ipynb
+    - notebook_2_svr.ipynb
+    - notebook_3_gradientboostin
 ---
 
 #### Data Dictionary
@@ -105,6 +122,7 @@ February 11, 2021
 | Debt | 61v | Short term debt outstanding at beg of year |
 
 For full list of variables, please see the link (https://nces.ed.gov/ccd/Data/txt/sdf18_1a_layout.txt).
+
 ---
 
 #### Citations
