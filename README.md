@@ -80,7 +80,11 @@ February 11, 2021
 - models
     - notebook_1_random_forest.ipynb
     - notebook_2_svr.ipynb
-    - notebook_3_gradientboostin
+    - notebook_3_gradientboosting.ipynb
+    - notebook_4_bagging.ipynb
+    - notebook_5_adaboost.ipynb
+    - notebook_6_neural_network.ipynb
+    
 ---
 
 #### Data Dictionary
