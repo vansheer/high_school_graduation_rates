@@ -164,10 +164,10 @@ For future research, we would incorporate non-fiscal variables in our work to ma
 - models/
     - notebook_1_random_forest.ipynb: variable heatmap, null model, random forest regression, RFE, PCA results
     - notebook_2_svr.ipynb: support vector regression results
-    - notebook_3_gradientboosting.ipynb: gradient boostin
-    - notebook_4_bagging.ipynb
-    - notebook_5_adaboost.ipynb
-    - notebook_6_neural_network.ipynb
+    - notebook_3_gradientboosting.ipynb: gradient boosting regression results
+    - notebook_4_bagging.ipynb: bootstrap aggregation results
+    - notebook_5_adaboost.ipynb: adaboosting regression results
+    - notebook_6_neural_network.ipynb: neural network regression results
     
     
 - streamlit/
