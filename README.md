@@ -232,7 +232,7 @@ For future research, we would incorporate non-fiscal variables in our work to ma
 | Debt | 41f | Long term debt outstanding at end of year |
 | Debt | 61v | Short term debt outstanding at beg of year |
 
-For full list of variables, please the [NCES data dictionary.](https://nces.ed.gov/ccd/Data/txt/sdf18_1a_layout.txt)
+For full list of variables, please see the [NCES data dictionary.](https://nces.ed.gov/ccd/Data/txt/sdf18_1a_layout.txt)
 
 ---
 
