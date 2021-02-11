@@ -104,10 +104,7 @@ February 11, 2021
 | Debt | 41f | Long term debt outstanding at end of year |
 | Debt | 61v | Short term debt outstanding at beg of year |
 
-For full list of variables, please follow this link ()
-
-
-
+For full list of variables, please see the link (https://nces.ed.gov/ccd/Data/txt/sdf18_1a_layout.txt).
 ---
 
 #### Citations
