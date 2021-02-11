@@ -174,16 +174,15 @@ For future research, we would incorporate non-fiscal variables in our work to ma
     - data/
         - states/
             - zip/
-                - state_abbreviation.csv
-            - states_lanlon
-        - dataset.csv
-        - full_school_district_with_zip.csv
+                - {state_abbreviation}.csv: state specific files, such as AL.csv
+            - states_lanlon.csv: all states with lanlon coordinates
+        - full_school_district_with_zip.csv: full dataset with zip codes
     - models/
-        - random_forest
+        - random_forest: our best performing model
     - notebooks/
-        - district_address_mapping.ipynb
-        - geocoding_test.ipynb
-    - project5.py
+        - district_address_mapping.ipynb: map school districts with zip codes
+        - geocoding_test.ipynb: test the geopy api
+    - project5.py: the streamlit app code
 
 ---
 
