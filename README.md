@@ -13,6 +13,24 @@ February 11, 2021
 
 #### Executive Summary
 
+The predicted target feature is the 4-year (on time) high school graduation rate of a school district’s 2018 graduating class. In preliminary research we found that on the state level, three-quarters of states have graduation rates between 80 and 90%. In 2018, Iowa was the state with the highest graduation rate of 91%, and the District of Columbia had the lowest graduation rate of 69%. In our analysis, charter-only districts were found to have an average graduation rate of 72%, while mixed charter and non-charter districts had an average of 80% graduation rate, and fully non-charter school districts had the highest average at 90% graduation rate. Although academic success and graduation is influenced by a myriad of social, geo-political, and community economic factors, this team chose to focus on school finances as a numeric proxy for larger issues of inequity.  
+
+Data was primarily sourced from the National Center for Education Statistics (NCES), who publish annual financial statements for every US public school district. Because the NCES no longer publishes national listings of outcomes like graduation rate, however, their data had to be supplemented with state-level publications of graduation rate by school district. Each state’s files are formatted slightly different and are available in varying levels of granularity, so each had to be read in individually and standardized before being able to match school districts by name with their finances as given by the NCES. 
+
+Graduation rate may remain unpublished if student population is insufficiently large, so not every district’s graduation rate could be included. Additionally, some states only require districts to report whether their cohorts fell into certain ranges of graduation rate, such as above 95% or below 5%. With this restriction, all school districts with a graduation rate greater than or equal to .95 were set to be .95, and all school districts with a graduation rate less than or equal to .05 were set to be .05. Any other rate ranges were set to their midpoint (i.e. a school district with a graduation rate of “80-90%” was set equal to .85).
+
+School districts’ fall memberships (the number of students enrolled at the beginning of the 2017-2018 school year) ranged between less than 10 to greater than 600,000, but primarily consisted of districts with between 1,000 and 2,000 students. The distributions of district size and most financial features were heavily skewed, clustering near the bottom of the range with long right tails consisting of the most populous and funded districts. To account for the skew in distribution, all financial features were scaled to be in proportion with the school district size by dividing by the fall membership. Any school district listed with a fall membership of zero or less was dropped from the dataset.
+
+Representing finances as per student moved to somewhat normalize the distributions, but they tended to still be right-skewed, so features were then set to be the log (base 10) of the per student calculations. Features with values of zero or below were determined to represent incomplete data for the district, and were set to be the simple mean of their column values to prevent errors when finding the log. Log-scaling values allowed the modeling process to better examine the full range of values, essentially stretching out the bottom end of the distribution and shortening the top. This both dampens the effect of outliers and magnifies variance within the most heavily-clustered sections of the distributions. 
+
+**[Modeling?]**
+
+We built a simple web app with Streamlit for users who would like to access graduation information in a visualized way. The app lets users select a state and a school district, then display the map of that district based on the geographic coordinates pulled with Geopy. A marker is placed on the map to identify the school district. Users can move their mice over the mark to see the name of the school district and its real-world graduation rate. 
+
+Five numeric features that are on top of the list of importance are displayed below the map, where each one is in the form of a slider so the values of these features can be altered. A real-time prediction will be performed in the backend upon each value change, and users can see how different input might change the final result. 
+
+The result, of course, is affected by many more features than the five listed. We only include these five numeric ones so that users can play around and get a sense of where they can possibly focus on. There are also many categorical features one needs to consider, such as whether it's a charter school district or not. To further improve the readability, a bar plot of the real-world rate and the predicted rate can be included.
+
 
 
 **Model Comparison**
@@ -36,48 +54,47 @@ February 11, 2021
 
 - README.md 
 
-- sources.md
+- sources.md : a linked listing of the sources used in background research and data collection
 
-- cleaning
-    - cleaning_code_by_state
-        - {ABBR}_cleaning.ipynb 
-    - fullset_cleaning.ipynb
-    - geo_merging.ipynb
-    - log_per_student.ipynb
-    - state_merging.ipynb
+- cleaning/
+    - 01_cleaning_code_by_state/
+        - {ABBR}_cleaning.ipynb : code for merging data from the state denoted by abbreviation {ABBR}
+    - 02_state_merging.ipynb : code to merge all state-level files into a single national file
+    - 03_fullset_cleaning.ipynb : code standardizing names, removing duplicates, and dropping unneeded features
+    - 04_log_per_student.ipynb : code to transform the national dataset logarithmically and by individual school district size
+    - 05_geo_merging.ipynb : code merging the included school districts with their geographic location given by the NCES directory
 
-- data
-    - state_data_raw
-        - {statename}20XX.csv
-        - {statename}20XX.pdf
-        - {statename}20XX.txt
-        - {statename}20XX.xls
-        - {statename}20XX.xlsx
-    - state_data_merged
-        - {ABBR}.csv
-    - fiscal2018
-    - directory.csv
-    - 50_states_clean.csv
-    - dataset.csv
-    - grad_rate_by_zip.csv
-    - log_per_student.csv
 
-- EDA
-    - plots
-        - {var}_hist.png : 
-        - percap_{var}_hist.png :
-        - log_{var}_hist.png :
-        - log_{var}_scatter.png :
-    - presentation_plots
-        - district_size.png
-        - totalrev.png
-        - totalrev_percap.png
-        - totalrev_log.png
-    - eda_initial.ipynb
-    - eda_transformed.ipynb
-    - presentation_visuals.ipynb
+- data/
+    - state_data_raw/
+        - {statename}{20XX}.{ext} : raw state-level district graduation data in .csv, .pdf, .txt, .xls, or .xlsx form; {statename} indicates the state, {20XX} indicates the graduation year of the data, unless the data is for mulitple years, in which case no year will be indicated
+    - state_data_merged/
+        - {ABBR}.csv : merged data for the state denoted by abbreviation {ABBR} generated from corresponding {ABBR}_cleaning.ipynb file in cleaning/01_cleaning_code_by_state/
+    - fiscal2018 : raw SAS format file from NCES of school district financials for the school year 2017-2018
+    - directory.csv : raw NCES file of school district locations
+    - 50_states.csv : merged data from the files in /state_data_merged/
+    - dataset.csv : cleaned version of 50_states.csv
+    - log_per_student.csv : transformed version of dataset.csv
+    - grad_rate_by_zip.csv : zip code lookup data file created by merging dataset.csv and directory.csv
 
-- models
+
+- EDA/
+    - plots/
+        - {var}_hist.png : histogram showing the initial distribution of variable {var}
+        - percap_{var}_hist.png : histogram showing the per student distribution of variable {var}
+        - log_{var}_hist.png : histogram showing the log-transformed per student distribution of variable {var}
+        - log_{var}_scatter.png : scatter plot showing the relationship between the log-transformed per student variable {var} and the target variable ‘graduation rate’
+    - presentation_plots/
+        - district_size.png : a seaborn-generated version of the distribution of variable ‘v33’ (fall membership) included in the presentation slides
+        - totalrev.png : a seaborn-generated version of the initial distribution of variable ‘totalrev’ included in the presentation slides
+        - totalrev_percap.png : a seaborn-generated version of the per student distribution of variable ‘totalrev’ included in the presentation slides
+        - totalrev_log.png : a seaborn-generated version of the log-transformed, per student distribution of variable ‘totalrev’ included in the presentation slides
+    - 01_eda_initial.ipynb : exploration, analysis, and plot-generating code of the pre-transformation data in dataset.csv
+    - 02_eda_transformed.ipynb : exploration, analysis, and plot-generating code of the transformed data in log_per_student.csv
+    - presentation_visuals.ipynb : short notebook with code used to generate the visuals in /presentation_plots/
+
+
+- models/
     - notebook_1_random_forest.ipynb
     - notebook_2_svr.ipynb
     - notebook_3_gradientboosting.ipynb
@@ -85,6 +102,22 @@ February 11, 2021
     - notebook_5_adaboost.ipynb
     - notebook_6_neural_network.ipynb
     
+    
+- streamlit/
+    - data/
+        - states/
+            - zip/
+                - state_abbreviation.csv
+            - states_lanlon
+        - dataset.csv
+        - full_school_district_with_zip.csv
+    - models/
+        - random_forest
+    - notebooks/
+        - district_address_mapping.ipynb
+        - geocoding_test.ipynb
+    - project5.py
+
 ---
 
 #### Data Dictionary
@@ -130,5 +163,7 @@ For full list of variables, please see the link (https://nces.ed.gov/ccd/Data/tx
 ---
 
 #### Citations
+
+See sources.md
 
 ---
