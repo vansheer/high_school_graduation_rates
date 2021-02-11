@@ -123,6 +123,8 @@ Based on the model and our work on feature analysis, we recommend focusing and i
 
 For future research, we would incorporate non-fiscal variables in our work to make the analysis more comprehensive. We would particularly be interested in looking at student participation and attendance, student academic performance and achievements, teacher labor union data.
 
+---
+
 #### File Directory
 
 - README.md 
