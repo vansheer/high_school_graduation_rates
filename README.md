@@ -102,11 +102,11 @@ Another tool that we employed to assess feature importance was Principal Compone
 
 #### App Predicting Graduation Rate
 
-We built a simple web app with Streamlit for users who would like to access graduation information in a visualized way. The app lets users select a state and a school district, then display the map of that district based on the geographic coordinates pulled with Geopy. A marker is placed on the map to identify the school district. Users can move their mice over the mark to see the name of the school district and its real-world graduation rate. 
+We built a simple web app with Streamlit for users who would like to access graduation information in a visualized way. The app lets users select a state and a school district, and then display the map of that district based on the geographic coordinates pulled with Geopy. A marker is placed on the map to identify the school district. Users can move their mice over the marker to see the name of the school district and its real-world graduation rate. 
 
-Five numeric features that are on top of the list of importance are displayed below the map, where each one is in the form of a slider so the values of these features can be altered. A real-time prediction will be performed in the backend upon each value change, and users can see how different input might change the final result. 
+Five numeric features that are on top of the list of importance are displayed on the left side of the screen, with each one as a slider so the values of these features can be altered. A real-time prediction will be performed in the backend upon each value change, and users can see how different input might change the final result. 
 
-The result, of course, is affected by many more features than the five listed. We only include these five numeric ones so that users can play around and get a sense of where they can possibly focus on. There are also many categorical features one needs to consider, such as whether it's a charter school district or not. To further improve the readability, a bar plot of the real-world rate and the predicted rate can be included.
+The result, of course, is affected by many more features than the five listed. We only include these five numeric ones so that users can play around and get a sense of where they can possibly focus on. There are also many categorical features one needs to consider, such as whether it's a charter school district or not.
 
 #### Key Findings and Recommendations
 
